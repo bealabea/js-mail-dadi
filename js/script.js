@@ -30,8 +30,8 @@ if(flag) {
 // DADI
 
 // attribuisco un numero casuale all'utente e uno al computer con due variabili
-let userNumber = Math.floor(Math.random() * 7);
-let computerNumber = Math.floor(Math.random() * 7);
+let userNumber = Math.floor(Math.random() *6) + 1;
+let computerNumber = Math.floor(Math.random() * 6) + 1;
 console.log(userNumber);
 console.log(computerNumber);
 // creo un ciclo di IF, SE la prima variabile è maggiore della seconda vince l'utente, ALTRIMENTI vince il computer
