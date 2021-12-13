@@ -1,12 +1,30 @@
 // EMAIL
 
 // creo l'ARRAY delle email
+const email = ['uno@gmail.com', 'due@yahoo.it', 'tre@gmail.com'];
+
 // chiedo all'utente la sua email con un PROMPT
+let userEmail= prompt('Scrivi la tua email');
+
 // creo una variabile (flag) con valore FALSE da attribuire in base al risultato che otterrò dal controllo
+let flag = false;
 
 // creo un ciclo FOR che esegua il controllo dell'email, se l'email dell'utente corrisponde ad una di quelle dell'array modificherò mia variabile (flag) in TRUE.
+for(let i = 0; i < email.length; i++) {
+    if(userEmail === email[i]) {
+        flag = true;
+    }
+}
+
 // chiuso il ciclo for, SE l'email dell'utente risulta "vera" sarà presemte all'interno della lista
 // ALTRIMENTI sarà "falsa" e quindi non sarà presente all'interno della lista
+
+if(flag) {
+    console.log(`${userEmail} fa parte della lista`);
+} else {
+    console.log(`${userEmail} non fa parte della lista`);
+}
+
 
 
 // DADI
